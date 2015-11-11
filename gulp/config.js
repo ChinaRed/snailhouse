@@ -6,13 +6,13 @@ global.TMP_FOLDER = 'tmp';
 global.config = {
   paths: {
     src: {
-      index: SRC_FOLDER + '/index.jade',
+      index: SRC_FOLDER + '/index.html',
       assets: [SRC_FOLDER + '/assets/**/*', '!' + SRC_FOLDER + '/assets/images/**/*'],
       images: SRC_FOLDER + '/assets/images/**/*',
       scripts: SRC_FOLDER + '/modules/**/*.js',
       styles: SRC_FOLDER + '/styles/app.css',
       stylesGlob: SRC_FOLDER + '/styles/**/*.css',
-      templates: SRC_FOLDER + '/modules/**/*.jade',
+      templates: SRC_FOLDER + '/modules/**/*.html',
       templatesHTML: SRC_FOLDER + '/modules/**/*.html',
       templatesCompiled: TMP_FOLDER,
       livereload: [BUILD_FOLDER + '/**/*', '!' + BUILD_FOLDER + '/assets/**/*'],
