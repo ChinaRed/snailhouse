@@ -1,0 +1,8 @@
+{
+  "name": "clearancefly",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.2.21",
+    "angular-ui-router": "~0.2.10"
+  }
+}
