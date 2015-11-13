@@ -11,6 +11,7 @@ global.config = {
       images: SRC_FOLDER + '/assets/images/**/*',
       scripts: SRC_FOLDER + '/modules/**/*.js',
       styles: SRC_FOLDER + '/styles/app.css',
+      sass: SRC_FOLDER + '/sass/app.scss',
       stylesGlob: SRC_FOLDER + '/styles/**/*.css',
       templates: SRC_FOLDER + '/modules/**/*.html',
       templatesHTML: SRC_FOLDER + '/modules/**/*.html',
