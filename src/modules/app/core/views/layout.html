@@ -1,0 +1,26 @@
+<div ng-repeat="listing in listings | filter:query | orderBy: 'info.name'">
+  <a ui-sref="listing({id:listing._id})">
+    <div class="listing_container">
+      <section class="header">
+        <div class="title">
+          <h1>{{listing.info.name}}</h1>
+        </div>
+      </section>
+      <section class="bus_info">
+        <h2>{{listing.info.hours}}</h2>
+        <h2>{{listing.location.city}} | {{listing.location.zip}}</h2>
+      </section>
+      <section class="coupon">
+        <div "title"></div>
+        <div "details">
+          <h2 class="offer">{{listing.coupon.offer}}</h2>
+          <p class="description">{{listing.coupon.description}}</p>
+          <p class="terms">{{listing.coupon.terms}}</p>
+          <p class="expiration">{{listing.coupon.expiration}}</p>
+        </div>
+      </section>
+    </div> 
+  </a><!-- .listing_container -->
+</div>
+
+<!--  ng-style="{'background-image': 'url(' + listing.info.main_image + ')'}" -->

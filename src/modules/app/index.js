@@ -9,9 +9,11 @@ module.exports =
     require('../../../tmp/templates').name,
     //useful directives, filters, services shared across the app
     require('../common').name,
-    //example app module:
-    require('./foo').name,
+    require('./core').name
     //load extra app modules here, e.g.:
-    //require('./frontend').name,
-    //require('./admin').name
-  ]);
+    // require('./frontend').name,
+    // require('./admin').name
+  ])
+.config(function($urlRouterProvider){
+  $urlRouterProvider.otherwise("/");
+});

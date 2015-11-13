@@ -1,0 +1,44 @@
+  <section class="listing_header" ng-style="{'background-image': 'url(' + listingImage + ')'}">
+      <div class="hero_title"><h1 class="come-in">{{listing.info.name}}</h1></div>
+  </section><!--end of listing header-->
+
+  <section class="bus_info">
+    <div class="info_summary">
+      <p>{{listing.info.summary}}</p>
+    </div>
+
+
+    <div class="info">
+      <ul>
+        <li class="bus_hours">
+          <h2>{{listing.info.hours.today}}</h2>
+        </li>
+        <li class="phone_number">
+          <h2>{{listing.info.phone}}</h2>
+        </li>
+        <li class="location">
+          <h2>{{listing.location.street}} <span>{{listing.location.unit}}</span> | {{listing.location.city}} | {{listing.location.zip}}</h2>
+        </li>
+        <li class="website">
+          <a href="#">{{listing.info.website}}</a>
+        </li>
+      </ul>
+    </div>
+  </section><!--end of businesss info-->
+
+  <section class="listing_coupon" ng-style="{'background-image': 'url(' + couponImage + ')'}">
+    <div class="details">
+      <h1>{{listing.coupon.offer}}</h1>
+      <p class="terms">{{listing.coupon.terms}}</p>
+      <p class="expiration">{{listing.coupon.expiration}}</p>
+      <p class="description">{{listing.coupon.description}}</p>
+    </div>
+  </section><!--coupon -->
+
+  <section class="rating">
+    <h1>Ratings</h1>
+    <div class="author">{{listing.reviews.name}}</div>
+    <div class="rating">{{listing.reviews.rating}}</div>
+    <div class="review">{{listing.reviews.review}}</div>
+  </section><!--end of rating-->
+

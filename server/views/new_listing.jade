@@ -1,0 +1,74 @@
+extends ./layout
+block content
+  form(action="/api/listings", method="POST")
+    h2 Language
+    label(for="language") language
+    input(type="text", id="language", name="language")
+    br
+    h2 category
+    label(for="category") category
+    input(type="text", id="category", name="category")
+    br
+    h2 region
+    label(for="region") region
+    input(type="text", id="region", name="region")
+    br
+    h2 Business Information
+    label(for="business_name") business name
+    input(type="text", id="business_name", name="name")
+    br
+    label(for="business_summary") business summary 
+    input(type="text", id="business_summary", name="summary")
+    br
+    label(for="phone") phone
+    input(type="text", id="phone", name="phone")
+    br
+    label(for="website") website
+    input(type="text", id="website", name="website")
+    br
+    label(for="main_image") main_image
+    input(type="text", id="main_image", name="main_image")
+    br
+    h2 Hours
+    label(for="hours") hours
+    input(type="text", id="hours", name="hours")
+    br
+    h2 Location
+    label(for="street") street
+    input(type="text", id="street", name="street")
+    br
+    label(for="unit") unit
+    input(type="text", id="unit", name="unit")
+    br
+    label(for="city") city
+    input(type="text", id="city", name="city")
+    br
+    label(for="state") state
+    input(type="text", id="state", name="state")
+    br
+    label(for="zip") zip
+    input(type="text", id="zip", name="zip")
+    br
+    label(for="latitude") latitude
+    input(type="text", id="latitude", name="latitude")
+    br
+    label(for="longitude") longitude
+    input(type="text", id="longitude", name="longitude")
+    br
+    h2 Deal Info
+    label(for="offer") offer
+    input(type="text", id="offer", name="offer")
+    br
+    label(for="description") description
+    input(type="text", id="description", name="description")
+    br
+    label(for="terms") terms
+    input(type="text", id="terms", name="terms")
+    br
+    label(for="expiration") expiration
+    input(type="text", id="expiration", name="expiration")
+    br
+    label(for="coupon_image") coupon_image
+    input(type="text", id="coupon_image", name="coupon_image")
+    br
+    button save

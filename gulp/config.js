@@ -2,6 +2,7 @@ global.SRC_FOLDER = 'src';
 global.BUILD_FOLDER = 'build';
 global.RELEASE_FOLDER = 'release';
 global.TMP_FOLDER = 'tmp';
+global.SERVER_FOLDER = 'server';
 
 global.config = {
   paths: {
@@ -10,8 +11,9 @@ global.config = {
       assets: [SRC_FOLDER + '/assets/**/*', '!' + SRC_FOLDER + '/assets/images/**/*'],
       images: SRC_FOLDER + '/assets/images/**/*',
       scripts: SRC_FOLDER + '/modules/**/*.js',
-      styles: SRC_FOLDER + '/styles/app.css',
       sass: SRC_FOLDER + '/sass/app.scss',
+      sassGlob: SRC_FOLDER + '/sass/**/*.scss',
+      styles: SRC_FOLDER + '/styles/app.css',
       stylesGlob: SRC_FOLDER + '/styles/**/*.css',
       templates: SRC_FOLDER + '/modules/**/*.html',
       templatesHTML: SRC_FOLDER + '/modules/**/*.html',
@@ -22,6 +24,7 @@ global.config = {
     dest: {
       build: {
         styles: BUILD_FOLDER,
+        sass: BUILD_FOLDER + '/bundle.css', 
         scripts: BUILD_FOLDER,
         images: BUILD_FOLDER + '/assets/images',
         assets: BUILD_FOLDER + '/assets',
@@ -30,6 +33,7 @@ global.config = {
       },
       release: {
         styles: RELEASE_FOLDER,
+        sass: BUILD_FOLDER + '/bundle.css', 
         scripts: RELEASE_FOLDER,
         images: RELEASE_FOLDER + '/assets/images',
         assets: RELEASE_FOLDER + '/assets',
@@ -58,6 +62,7 @@ global.config = {
   },
   ports: {
     staticServer: 8080,
+    serverPort: 8080,
     livereloadServer: 35729
   }
 };
