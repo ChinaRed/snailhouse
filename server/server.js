@@ -19,9 +19,14 @@ app.use(function (req, res, next){
   next();
 });
 
-app.use(bodyParser.urlencoded({extend:true}));
+app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
-app.use(session({ secret : 'keyboard cat'}));
+app.use(session({
+  secret: 'keyboard cat',
+  resave: false,
+  saveUninitialized: true,
+  cookie: { secure: true }
+}));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(methodOverride('_method'));
